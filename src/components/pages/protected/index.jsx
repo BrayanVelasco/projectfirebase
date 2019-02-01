@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
+import MovieApp from '../../movies/'
 
-export default class Protect extends Component{
+export default class DashBoardProtected extends Component{
     render(){
         return(
             <article>
-                <h1>Protect Section</h1>
+                <MovieApp></MovieApp>
             </article>
         )
     }

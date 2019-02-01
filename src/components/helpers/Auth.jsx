@@ -4,9 +4,12 @@ import {firebaseAuth, ref} from '../../data/config'
 //crear usuario
 const saveUser= (user) =>(
     ref
-        .child()
-        .set({})
-        .then( ()=> {})
+        .child(`users/${user.uid}/info`)
+        .set({
+            email: user.email,
+            uid: user.uid
+        })
+        .then( ()=> user)
 )
 
 const auth = (email, password) =>(
@@ -17,7 +20,7 @@ const auth = (email, password) =>(
 
 const login = (email, password) => firebaseAuth().signInWithEmailAndPassword(email, password)  //promesa
 
-const logout = () => firebaseAuth().signOuth()
+const logout = () => firebaseAuth().signOut()
 
 const resetPassword = email => firebaseAuth().sendPasswordResetEmail(email)
 

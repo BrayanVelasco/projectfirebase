@@ -1,0 +1,18 @@
+{
+    "movies": [
+      {"name":"Glass",
+        "categories":[
+          "Suspense",
+           "Terror",
+           "Mystery",
+           "Drama"
+        ],
+        "date":" 17/01/2019",
+        "cast":" Bruce Willis, James McAvoy, Samuel L. Jackson, Sarah Paulson",
+        "urlMovie":"http://pelisplus.co/pelicula/glass/p001/",
+        "poster":"https://static.pelisplus.co/movie/cover/original/310f20a72cf82abecd1606aa0c5aa26f.jpg",
+        "synopsis":" The plot will focus on the confrontation that will organize with his actions Price, a man who holds certain secrets of all protagonists, while Dunn chases Crumb in a series of increasingly intense encounters."
+      
+      }
+    ]
+  }
